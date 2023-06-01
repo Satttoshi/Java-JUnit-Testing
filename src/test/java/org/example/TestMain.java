@@ -50,14 +50,28 @@ public class TestMain {
     @Test
     void testSmallerThanZero() {
 
-            //Given
-            int number = -1;
+        //Given
+        int number = -1;
 
-            //When
-            boolean actual = Main.smallerThanZero(number);
+        //When
+        boolean actual = Main.smallerThanZero(number);
 
-            //Then
-            boolean expected = true;
-            Assertions.assertEquals(expected, actual);
+        //Then
+        Assertions.assertTrue(actual);
+    }
+
+    @Test
+    void testSumSquareOrSubtract() {
+
+        //Given
+        int number1 = 2;
+        int number2 = 3;
+
+        //When
+        int actual = Main.sumSquareOrSubtract(number1, number2);
+
+        //Then
+        int expected = 1;
+        Assertions.assertEquals(expected, actual);
     }
 }

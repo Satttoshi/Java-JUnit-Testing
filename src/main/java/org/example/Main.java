@@ -16,7 +16,6 @@ public class Main {
     }
 
     public static String fizzbuzz(int number) {
-
         if (number % 3 == 0 && number % 5 == 0) {
             return "fizzbuzz";
         } else if (number % 3 == 0) {
@@ -28,6 +27,14 @@ public class Main {
 
     public static boolean smallerThanZero(int number) {
         return number < 0;
+    }
+
+    public static int sumSquareOrSubtract(int a, int b) {
+        if (a > b) {
+            return a * a + b * b;
+        } else {
+            return a - b;
+        }
     }
 
 }
