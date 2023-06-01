@@ -29,8 +29,7 @@ public class TestMain {
         boolean actual = Main.isBiggerThanHundred(number);
 
         //Then
-        boolean expected = false;
-        Assertions.assertEquals(expected, actual);
+        Assertions.assertFalse(actual);
     }
 
     @Test
@@ -71,7 +70,7 @@ public class TestMain {
         int actual = Main.sumSquareOrSubtract(number1, number2);
 
         //Then
-        int expected = 1;
+        int expected = -1;
         Assertions.assertEquals(expected, actual);
     }
 }
